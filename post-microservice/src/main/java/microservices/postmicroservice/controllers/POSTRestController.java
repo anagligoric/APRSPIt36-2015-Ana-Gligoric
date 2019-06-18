@@ -10,6 +10,8 @@ import microservices.postmicroservice.repositories.NationalityRepository;
 import microservices.postmicroservice.repositories.PlayerRepository;
 import microservices.postmicroservice.repositories.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
+import org.springframework.cloud.openfeign.FeignAutoConfiguration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -47,7 +49,7 @@ public class POSTRestController {
 
     @PostMapping("team")
     public ResponseEntity<Team> insertTeam(@RequestBody Team team) {
-        if (nationalityRepository.existsById(team.getId()))
+        if (teamRepository.existsById(team.getId()))
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         teamRepository.save(team);
         return ResponseEntity.ok(team);
@@ -55,7 +57,7 @@ public class POSTRestController {
 
     @PostMapping("league")
     public ResponseEntity<League> insertLeague(@RequestBody League league) {
-        if (nationalityRepository.existsById(league.getId()))
+        if (leagueRepository.existsById(league.getId()))
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         leagueRepository.save(league);
         return ResponseEntity.ok(league);
