@@ -29,7 +29,6 @@ public class Player implements Serializable {
     @Column
     private String lastName;
 
-    @NotBlank(message = "Player height can not be blank.")
     @Column
     private Integer height;
 
@@ -37,7 +36,6 @@ public class Player implements Serializable {
     @Column
     private String regNumber;
 
-    @NotBlank(message = "Player date of birth can not be blank.")
     @Temporal(TemporalType.DATE)
     @Column
     private Date dateOfBirth;

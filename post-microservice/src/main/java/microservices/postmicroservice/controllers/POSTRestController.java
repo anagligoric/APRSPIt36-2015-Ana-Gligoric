@@ -10,13 +10,14 @@ import microservices.postmicroservice.repositories.NationalityRepository;
 import microservices.postmicroservice.repositories.PlayerRepository;
 import microservices.postmicroservice.repositories.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
-import org.springframework.cloud.openfeign.FeignAutoConfiguration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Collection;
 
 @RestController
 public class POSTRestController {
@@ -58,6 +59,11 @@ public class POSTRestController {
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         leagueRepository.save(league);
         return ResponseEntity.ok(league);
+    }
+
+    @GetMapping("player")
+    public Collection<Player> getPlayers() {
+        return playerRepository.findAll();
     }
 
     @PostMapping("player")

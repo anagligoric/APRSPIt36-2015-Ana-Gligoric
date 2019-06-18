@@ -29,7 +29,6 @@ public class Player implements Serializable {
     @Column
     private String lastName;
 
-    @NotBlank(message = "Player height can not be blank.")
     @Column
     private Integer height;
 
