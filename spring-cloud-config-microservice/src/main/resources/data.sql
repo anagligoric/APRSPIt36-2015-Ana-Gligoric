@@ -68,7 +68,7 @@ insert into player(id, first_name, last_name, reg_number, date_of_birth, height,
 insert into player(id, first_name, last_name, reg_number, date_of_birth, height, nationality_id, team_id) values(40,'Derrick', 'Brown', 'AE/5', to_date('08.09.1987', 'dd.mm.yyyy'),203 ,3 ,8);
 insert into player(id, first_name, last_name, reg_number, date_of_birth, height, nationality_id, team_id) values(41,'Stefan', 'Jovic', 'BM/16', to_date('03.11.1990', 'dd.mm.yyyy'),198 ,1 ,9);
 insert into player(id, first_name, last_name, reg_number, date_of_birth, height, nationality_id, team_id) values(42,'Vladimir', 'Lucic', 'BM/11', to_date('17.06.1989', 'dd.mm.yyyy'),202 ,1 ,9);
-insert into player(id, first_name, last_name, reg_number, date_of_birth, height, nationality_id, team_id) values(43'Reggie', 'Redding', 'BM/15', to_date('18.07.1988', 'dd.mm.yyyy'),193 ,3 ,9);
+insert into player(id, first_name, last_name, reg_number, date_of_birth, height, nationality_id, team_id) values(43, 'Reggie', 'Redding', 'BM/15', to_date('18.07.1988', 'dd.mm.yyyy'),193 ,3 ,9);
 insert into player(id, first_name, last_name, reg_number, date_of_birth, height, nationality_id, team_id) values(44,'Anton', 'Gavel', 'BM/25', to_date('24.10.1984', 'dd.mm.yyyy'),189 ,5 ,9);
 insert into player(id, first_name, last_name, reg_number, date_of_birth, height, nationality_id, team_id) values(45,'Jared', 'Conningham', 'BM/9', to_date('22.05.1991', 'dd.mm.yyyy'),195 ,3 ,9);
 insert into player(id, first_name, last_name, reg_number, date_of_birth, height, nationality_id, team_id) values(46,'Daniel', 'Hackett', 'BB/0', to_date('19.12.1987', 'dd.mm.yyyy'),197 ,7 ,10);
