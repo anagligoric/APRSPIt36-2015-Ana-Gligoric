@@ -1,4 +1,4 @@
-package microservices.getmicroservice.models;
+package microservices.postmicroservice.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
@@ -36,7 +36,6 @@ public class Player implements Serializable {
     @NotBlank(message = "Player registration number can not be blank.")
     @Column
     private String regNumber;
-
 
     @NotBlank(message = "Player date of birth can not be blank.")
     @Temporal(TemporalType.DATE)

@@ -26,6 +26,7 @@ create table team(
 
 create table player(
 	id bigint not null ,
+	redni_broj integer not null,
     first_name varchar(50) not null,
     last_name varchar(50) not null,
     reg_number varchar(50) not null,
