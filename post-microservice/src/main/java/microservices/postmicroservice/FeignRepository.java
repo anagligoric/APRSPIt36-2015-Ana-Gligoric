@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 @RibbonClient(name = "get-microservice")
 public interface FeignRepository {
     @GetMapping("redniBroj/{id}")
-    public Integer redniBroj(@PathVariable("id") int id);
+    public Integer redniBroj(@PathVariable("id") Long id);
 }
 
