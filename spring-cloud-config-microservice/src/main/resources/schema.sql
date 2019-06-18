@@ -5,19 +5,19 @@ drop table if exists player CASCADE;
 
 
 create table nationality (
-	id integer not null,
+	id bigint not null,
     nationality_name varchar(100) not null,
     abbreviation varchar(50) not null
 );
 
 create table league (
-	id integer not null,
+	id bigint not null,
     league_name varchar(100) not null,
     label varchar(50)
 );
 
 create table team(
-	id integer not null,
+	id bigint not null,
 	team_name varchar(100) not null,
   founded date not null,
 	headquarter varchar(100) not null,
@@ -25,7 +25,7 @@ create table team(
 );
 
 create table player(
-	id integer not null,
+	id bigint not null,
     first_name varchar(50) not null,
     last_name varchar(50) not null,
     reg_number varchar(50) not null,
