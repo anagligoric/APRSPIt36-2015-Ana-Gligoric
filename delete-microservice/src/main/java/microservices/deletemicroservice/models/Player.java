@@ -1,4 +1,4 @@
-package microservices.getmicroservice.models;
+package microservices.deletemicroservice.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;

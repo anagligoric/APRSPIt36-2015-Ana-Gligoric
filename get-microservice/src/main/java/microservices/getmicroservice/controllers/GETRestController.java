@@ -36,7 +36,7 @@ public class GETRestController {
     public ResponseEntity<Collection<Nationality>> getNationalities() {
         Collection<Nationality> nationalities = nationalityRepository.findAll();
         if (CollectionUtils.isEmpty(nationalities)) {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.noContent().build();
         } else {
             return ResponseEntity.ok(nationalities);
         }
@@ -47,7 +47,7 @@ public class GETRestController {
         if (nationalityRepository.existsById(id)) {
             return ResponseEntity.ok(nationalityRepository.getOne(id));
         } else {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.noContent().build();
         }
     }
 
@@ -55,7 +55,7 @@ public class GETRestController {
     public ResponseEntity<Collection<Nationality>> getNationalityByName(@PathVariable("nationalityName") String nationalityName) {
         Collection<Nationality> nationalities = nationalityRepository.findByNationalityNameContainingIgnoreCase(nationalityName);
         if (CollectionUtils.isEmpty(nationalities)) {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.noContent().build();
         } else {
             return ResponseEntity.ok(nationalities);
         }
@@ -71,7 +71,7 @@ public class GETRestController {
         if (leagueRepository.existsById(id)) {
             return ResponseEntity.ok(leagueRepository.getOne(id));
         } else {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.noContent().build();
         }
     }
 
@@ -79,7 +79,7 @@ public class GETRestController {
     public ResponseEntity<Collection<League>> getLeagueByName(@PathVariable("leagueName") String leagueName) {
         Collection<League> leagues = leagueRepository.findByLeagueNameContainingIgnoreCase(leagueName);
         if (CollectionUtils.isEmpty(leagues)) {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.noContent().build();
         } else {
             return ResponseEntity.ok(leagues);
         }
@@ -95,7 +95,7 @@ public class GETRestController {
         if (teamRepository.existsById(id)) {
             return ResponseEntity.ok(teamRepository.getOne(id));
         } else {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.noContent().build();
         }
     }
 
@@ -103,7 +103,7 @@ public class GETRestController {
     public ResponseEntity<Collection<Team>> getTeamByName(@PathVariable("teamName") String teamName) {
         Collection<Team> teams = teamRepository.findByTeamNameContainingIgnoreCase(teamName);
         if (CollectionUtils.isEmpty(teams)) {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.noContent().build();
         } else {
             return ResponseEntity.ok(teams);
         }
@@ -119,7 +119,7 @@ public class GETRestController {
         if (playerRepository.existsById(id)) {
             return ResponseEntity.ok(playerRepository.getOne(id));
         } else {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.noContent().build();
         }
     }
 
@@ -127,7 +127,7 @@ public class GETRestController {
     public ResponseEntity<Collection<Player>> getPlayerByFirstName(@PathVariable("playerFirstName") String playerFirstName) {
         Collection<Player> players = playerRepository.findByFirstNameContainingIgnoreCase(playerFirstName);
         if (CollectionUtils.isEmpty(players)) {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.noContent().build();
         } else {
             return ResponseEntity.ok(players);
         }
@@ -137,7 +137,7 @@ public class GETRestController {
     public ResponseEntity<Collection<Player>> getPlayerByLastName(@PathVariable("playerLastName") String playerLastName) {
         Collection<Player> players = playerRepository.findByLastNameContainingIgnoreCase(playerLastName);
         if (CollectionUtils.isEmpty(players)) {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.noContent().build();
         } else {
             return ResponseEntity.ok(players);
         }
@@ -149,7 +149,7 @@ public class GETRestController {
             Team team = teamRepository.getOne(id);
             return ResponseEntity.ok(playerRepository.findByTeam(team));
         } else {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.noContent().build();
         }
     }
     @GetMapping("redniBroj/{id}")

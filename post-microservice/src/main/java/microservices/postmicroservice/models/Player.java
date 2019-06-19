@@ -15,7 +15,8 @@ public class Player implements Serializable {
 
 
     @Id
-  /*  @GeneratedValue(strategy = GenerationType.IDENTITY)*/
+    @SequenceGenerator(name="PLAYER_ID_GENERATOR", sequenceName="PLAYER_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="PLAYER_ID_GENERATOR")
     private Long id;
 
     @Column

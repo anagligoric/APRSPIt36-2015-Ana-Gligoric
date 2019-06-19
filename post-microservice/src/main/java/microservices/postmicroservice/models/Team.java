@@ -16,14 +16,14 @@ import java.util.List;
 public class Team implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @SequenceGenerator(name="TEAM_ID_GENERATOR", sequenceName="TEAM_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TEAM_ID_GENERATOR")
     private Long id;
 
     @NotBlank(message = "Team name can not be blank.")
     @Column
     private String teamName;
 
-    @NotBlank(message = "Date when team is founded can not be blank.")
     @Temporal(TemporalType.DATE)
     private Date founded;
 

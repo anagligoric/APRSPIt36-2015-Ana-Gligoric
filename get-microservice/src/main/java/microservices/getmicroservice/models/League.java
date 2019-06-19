@@ -15,7 +15,6 @@ import java.util.List;
 public class League implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotBlank(message = "Team name can not be blank.")

@@ -15,7 +15,6 @@ import java.util.List;
 public class Nationality implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long id;
 
     @NotBlank(message = "Nationality name can not be blank.")

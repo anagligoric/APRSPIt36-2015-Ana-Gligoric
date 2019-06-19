@@ -1,10 +1,13 @@
-package microservices.postmicroservice.models;
+package microservices.deletemicroservice.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
 import java.util.List;
@@ -14,10 +17,7 @@ import java.util.List;
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class League implements Serializable {
 
-
     @Id
-    @SequenceGenerator(name="LEAGUE_ID_GENERATOR", sequenceName="LEAGUE_SEQ", allocationSize = 1)
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="LEAGUE_ID_GENERATOR")
     private Long id;
 
     @NotBlank(message = "Team name can not be blank.")
