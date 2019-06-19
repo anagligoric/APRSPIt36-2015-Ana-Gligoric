@@ -102,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/microservicesProperties/zuul-api-gateway.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -209,8 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,6 +282,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -295,6 +294,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -401,19 +401,20 @@
       <workItem from="1560892422887" duration="13041000" />
       <workItem from="1560930911950" duration="2066000" />
       <workItem from="1560934453518" duration="1369000" />
-      <workItem from="1560936253918" duration="989000" />
+      <workItem from="1560936253918" duration="1176000" />
+      <workItem from="1560937842590" duration="1605000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48565000" />
+    <option name="totallyTimeSpent" value="50357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="20" width="1346" height="688" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.37293234" side_tool="true" visible="true" weight="0.33507854" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.3736842" side_tool="true" visible="true" weight="0.33507854" />
       <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.32932332" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
@@ -430,7 +431,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6270677" visible="true" weight="0.33507854" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6263158" visible="true" weight="0.33507854" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32984293" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32984293" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962406" />
@@ -819,7 +820,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/microservicesProperties/zuul-api-gateway.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
         </state>
       </provider>
     </entry>

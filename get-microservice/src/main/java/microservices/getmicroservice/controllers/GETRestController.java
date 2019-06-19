@@ -152,8 +152,8 @@ public class GETRestController {
             return ResponseEntity.noContent().build();
         }
     }
-    @GetMapping("redniBroj/{id}")
-    public Integer redniBroj(@PathVariable("id") int id) {
-        return playerRepository.nextRBr(id);
+    @GetMapping("num/{id}")
+    public Integer num(@PathVariable("id") int id) {
+        return playerRepository.nextNum(id);
     }
 }

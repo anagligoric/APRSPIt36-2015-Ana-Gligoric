@@ -18,7 +18,7 @@ public class Player implements Serializable {
     private Long id;
 
     @Column
-    private Integer redniBroj;
+    private Integer num;
 
     @NotBlank(message = "Player first name can not be blank.")
     @Column

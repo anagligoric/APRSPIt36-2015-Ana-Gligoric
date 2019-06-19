@@ -29,7 +29,7 @@ create table team(
 
 create table player(
 	 id integer not null,
-	redni_broj integer not null,
+	num integer not null,
     first_name varchar(50) not null,
     last_name varchar(50) not null,
     reg_number varchar(50) not null,

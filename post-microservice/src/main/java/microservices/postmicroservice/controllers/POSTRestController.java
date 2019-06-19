@@ -63,16 +63,12 @@ public class POSTRestController {
         return ResponseEntity.ok(league);
     }
 
-    @GetMapping("player")
-    public Collection<Player> getPlayers() {
-        return playerRepository.findAll();
-    }
 
     @PostMapping("player")
     public ResponseEntity<Player> insertPlayer(@RequestBody Player player) {
         if (playerRepository.existsById(player.getId()))
             return new ResponseEntity<>(HttpStatus.CONFLICT);
-        player.setRedniBroj(feign.redniBroj(player.getTeam().getId()));
+        player.setNum(feign.num(player.getTeam().getId()));
         playerRepository.save(player);
         return ResponseEntity.ok(player);
     }
